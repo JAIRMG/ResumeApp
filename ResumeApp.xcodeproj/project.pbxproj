@@ -15,6 +15,7 @@
 		DE1F09FE2278E0550074C73D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1F09FC2278E0550074C73D /* LaunchScreen.storyboard */; };
 		DE1F0A092278E0560074C73D /* ResumeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F0A082278E0560074C73D /* ResumeAppTests.swift */; };
 		DE1F0A142278E0560074C73D /* ResumeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F0A132278E0560074C73D /* ResumeAppUITests.swift */; };
+		DE1F0A232278E2B60074C73D /* GradientTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F0A222278E2B60074C73D /* GradientTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		DE1F0A0F2278E0560074C73D /* ResumeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResumeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE1F0A132278E0560074C73D /* ResumeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeAppUITests.swift; sourceTree = "<group>"; };
 		DE1F0A152278E0560074C73D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE1F0A222278E2B60074C73D /* GradientTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		DE1F09EF2278E0540074C73D /* ResumeApp */ = {
 			isa = PBXGroup;
 			children = (
+				DE1F0A212278E2A40074C73D /* Utils */,
 				DE1F09F02278E0540074C73D /* AppDelegate.swift */,
 				DE1F09F22278E0540074C73D /* ViewController.swift */,
 				DE1F09F42278E0540074C73D /* Main.storyboard */,
@@ -126,6 +129,14 @@
 				DE1F0A152278E0560074C73D /* Info.plist */,
 			);
 			path = ResumeAppUITests;
+			sourceTree = "<group>";
+		};
+		DE1F0A212278E2A40074C73D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DE1F0A222278E2B60074C73D /* GradientTabBar.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE1F09F32278E0540074C73D /* ViewController.swift in Sources */,
+				DE1F0A232278E2B60074C73D /* GradientTabBar.swift in Sources */,
 				DE1F09F92278E0540074C73D /* ResumeApp.xcdatamodeld in Sources */,
 				DE1F09F12278E0540074C73D /* AppDelegate.swift in Sources */,
 			);
