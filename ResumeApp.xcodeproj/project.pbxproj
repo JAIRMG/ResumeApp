@@ -7,8 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1C53B2E227940AE00991E71 /* SummaryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C53B2D227940AE00991E71 /* SummaryPresenter.swift */; };
+		A1C53B30227942F100991E71 /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C53B2F227942F100991E71 /* Summary.swift */; };
+		A1C53B32227944E100991E71 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C53B31227944E100991E71 /* ApiService.swift */; };
+		A1C53B34227947B900991E71 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C53B33227947B900991E71 /* Errors.swift */; };
+		A1C53B372279615D00991E71 /* WorkExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C53B362279615D00991E71 /* WorkExperienceViewController.swift */; };
+		A1C53B392279616B00991E71 /* WorkExperiencePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C53B382279616B00991E71 /* WorkExperiencePresenter.swift */; };
+		A1C53B3B2279621E00991E71 /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C53B3A2279621E00991E71 /* Work.swift */; };
+		A1C53B3D2279692500991E71 /* WorkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C53B3C2279692500991E71 /* WorkCell.swift */; };
+		A1C53B412279739000991E71 /* ExperienceDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C53B402279739000991E71 /* ExperienceDetailController.swift */; };
+		A1C53B4322797C4800991E71 /* RoundableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C53B4222797C4800991E71 /* RoundableButton.swift */; };
 		DE1F09F12278E0540074C73D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F09F02278E0540074C73D /* AppDelegate.swift */; };
-		DE1F09F32278E0540074C73D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F09F22278E0540074C73D /* ViewController.swift */; };
+		DE1F09F32278E0540074C73D /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F09F22278E0540074C73D /* SummaryViewController.swift */; };
 		DE1F09F62278E0540074C73D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1F09F42278E0540074C73D /* Main.storyboard */; };
 		DE1F09F92278E0540074C73D /* ResumeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE1F09F72278E0540074C73D /* ResumeApp.xcdatamodeld */; };
 		DE1F09FB2278E0550074C73D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE1F09FA2278E0550074C73D /* Assets.xcassets */; };
@@ -36,9 +46,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A1C53B2D227940AE00991E71 /* SummaryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryPresenter.swift; sourceTree = "<group>"; };
+		A1C53B2F227942F100991E71 /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
+		A1C53B31227944E100991E71 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		A1C53B33227947B900991E71 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		A1C53B362279615D00991E71 /* WorkExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExperienceViewController.swift; sourceTree = "<group>"; };
+		A1C53B382279616B00991E71 /* WorkExperiencePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkExperiencePresenter.swift; sourceTree = "<group>"; };
+		A1C53B3A2279621E00991E71 /* Work.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
+		A1C53B3C2279692500991E71 /* WorkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkCell.swift; sourceTree = "<group>"; };
+		A1C53B402279739000991E71 /* ExperienceDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailController.swift; sourceTree = "<group>"; };
+		A1C53B4222797C4800991E71 /* RoundableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundableButton.swift; sourceTree = "<group>"; };
 		DE1F09ED2278E0540074C73D /* ResumeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResumeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE1F09F02278E0540074C73D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE1F09F22278E0540074C73D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE1F09F22278E0540074C73D /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		DE1F09F52278E0540074C73D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE1F09F82278E0540074C73D /* ResumeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ResumeApp.xcdatamodel; sourceTree = "<group>"; };
 		DE1F09FA2278E0550074C73D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,6 +98,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1C53B2C22793FA900991E71 /* Summary */ = {
+			isa = PBXGroup;
+			children = (
+				DE1F09F22278E0540074C73D /* SummaryViewController.swift */,
+				A1C53B2D227940AE00991E71 /* SummaryPresenter.swift */,
+				A1C53B2F227942F100991E71 /* Summary.swift */,
+			);
+			path = Summary;
+			sourceTree = "<group>";
+		};
+		A1C53B352279610700991E71 /* WorkExperience */ = {
+			isa = PBXGroup;
+			children = (
+				A1C53B362279615D00991E71 /* WorkExperienceViewController.swift */,
+				A1C53B382279616B00991E71 /* WorkExperiencePresenter.swift */,
+				A1C53B3A2279621E00991E71 /* Work.swift */,
+				A1C53B3C2279692500991E71 /* WorkCell.swift */,
+				A1C53B402279739000991E71 /* ExperienceDetailController.swift */,
+			);
+			path = WorkExperience;
+			sourceTree = "<group>";
+		};
 		DE1F09E42278E0540074C73D = {
 			isa = PBXGroup;
 			children = (
@@ -101,9 +143,10 @@
 		DE1F09EF2278E0540074C73D /* ResumeApp */ = {
 			isa = PBXGroup;
 			children = (
+				A1C53B352279610700991E71 /* WorkExperience */,
+				A1C53B2C22793FA900991E71 /* Summary */,
 				DE1F0A212278E2A40074C73D /* Utils */,
 				DE1F09F02278E0540074C73D /* AppDelegate.swift */,
-				DE1F09F22278E0540074C73D /* ViewController.swift */,
 				DE1F09F42278E0540074C73D /* Main.storyboard */,
 				DE1F09FA2278E0550074C73D /* Assets.xcassets */,
 				DE1F09FC2278E0550074C73D /* LaunchScreen.storyboard */,
@@ -135,6 +178,9 @@
 			isa = PBXGroup;
 			children = (
 				DE1F0A222278E2B60074C73D /* GradientTabBar.swift */,
+				A1C53B31227944E100991E71 /* ApiService.swift */,
+				A1C53B33227947B900991E71 /* Errors.swift */,
+				A1C53B4222797C4800991E71 /* RoundableButton.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -270,9 +316,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE1F09F32278E0540074C73D /* ViewController.swift in Sources */,
+				DE1F09F32278E0540074C73D /* SummaryViewController.swift in Sources */,
+				A1C53B2E227940AE00991E71 /* SummaryPresenter.swift in Sources */,
+				A1C53B3B2279621E00991E71 /* Work.swift in Sources */,
 				DE1F0A232278E2B60074C73D /* GradientTabBar.swift in Sources */,
+				A1C53B412279739000991E71 /* ExperienceDetailController.swift in Sources */,
+				A1C53B3D2279692500991E71 /* WorkCell.swift in Sources */,
+				A1C53B372279615D00991E71 /* WorkExperienceViewController.swift in Sources */,
 				DE1F09F92278E0540074C73D /* ResumeApp.xcdatamodeld in Sources */,
+				A1C53B4322797C4800991E71 /* RoundableButton.swift in Sources */,
+				A1C53B34227947B900991E71 /* Errors.swift in Sources */,
+				A1C53B30227942F100991E71 /* Summary.swift in Sources */,
+				A1C53B392279616B00991E71 /* WorkExperiencePresenter.swift in Sources */,
+				A1C53B32227944E100991E71 /* ApiService.swift in Sources */,
 				DE1F09F12278E0540074C73D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
