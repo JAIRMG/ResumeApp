@@ -630,7 +630,7 @@
         <scene sceneID="4yV-7U-VdM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="26D-KP-oiC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="downloads" id="Whz-ep-X7e"/>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="Whz-ep-X7e"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="erC-u0-HMv">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -652,7 +652,7 @@
         <scene sceneID="Bya-EE-Igh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Csi-Gc-FIW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="search" id="YS9-0a-0Pv"/>
+                    <tabBarItem key="tabBarItem" systemItem="featured" id="YS9-0a-0Pv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="D5r-Pe-HUS">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -674,7 +674,7 @@
         <scene sceneID="7xd-fW-LAC">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="40J-Oq-JRM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="anr-PG-rQx"/>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="anr-PG-rQx"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="1pf-dI-bWN">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
