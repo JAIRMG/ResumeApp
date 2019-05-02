@@ -39,8 +39,15 @@ extension SummaryViewController: SummaryView {
     
     func setSummary(_ summary: Summary) {
         self.summary = summary
+        summaryDescription.isHidden = false
+        interestDescription.isHidden = false
         summaryDescription.text = self.summary.summary?.description
         interestDescription.text = self.summary.interests?.description
+    }
+    
+    func setEmptySummary(){
+        summaryDescription.isHidden = true
+        interestDescription.isHidden = true
     }
     
     

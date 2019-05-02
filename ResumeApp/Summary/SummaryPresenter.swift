@@ -12,6 +12,7 @@ protocol SummaryView: NSObjectProtocol {
     func startLoading()
     func finishLoading()
     func setSummary(_ summary: Summary)
+    func setEmptySummary()
 }
 
 class SummaryPresenter {
@@ -42,7 +43,7 @@ class SummaryPresenter {
                 self?.summaryView?.setSummary(summary)
             case .failure(let error):
                 print(error)
-                
+                self?.summaryView?.setEmptySummary()
             }
         }
         
