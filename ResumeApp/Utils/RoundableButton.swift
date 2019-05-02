@@ -59,14 +59,16 @@ class RoundableButton: UIButton {
     {
         if(self.circular) {
             self.layer.cornerRadius = self.bounds.size.height/2
-            self.layer.masksToBounds = true
+            self.layer.masksToBounds = false
             self.layer.borderColor = self.borderColor.cgColor
             self.layer.borderWidth = CGFloat(self.borderWidth)
+            self.clipsToBounds = true
         }else {
             self.layer.cornerRadius = cornerRadius
-            self.layer.masksToBounds = true
+            self.layer.masksToBounds = false
             self.layer.borderColor = self.borderColor.cgColor
             self.layer.borderWidth = CGFloat(self.borderWidth)
+            self.clipsToBounds = true
         }
     }
     

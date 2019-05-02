@@ -17,5 +17,6 @@ struct WorkInfo: Decodable {
     var role: String?
     var company: String?
     var detailWork: String?
+    var image: String?
 }
 

@@ -29,9 +29,13 @@
 		DE1F09F92278E0540074C73D /* ResumeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DE1F09F72278E0540074C73D /* ResumeApp.xcdatamodeld */; };
 		DE1F09FB2278E0550074C73D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE1F09FA2278E0550074C73D /* Assets.xcassets */; };
 		DE1F09FE2278E0550074C73D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE1F09FC2278E0550074C73D /* LaunchScreen.storyboard */; };
-		DE1F0A092278E0560074C73D /* ResumeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F0A082278E0560074C73D /* ResumeAppTests.swift */; };
-		DE1F0A142278E0560074C73D /* ResumeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F0A132278E0560074C73D /* ResumeAppUITests.swift */; };
 		DE1F0A232278E2B60074C73D /* GradientTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F0A222278E2B60074C73D /* GradientTabBar.swift */; };
+		DE43B348227B3EDA00D0B380 /* CActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43B347227B3EDA00D0B380 /* CActivityIndicator.swift */; };
+		DE43B34C227B424400D0B380 /* SummaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43B34B227B424400D0B380 /* SummaryTests.swift */; };
+		DE43B34E227B430B00D0B380 /* SummaryMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43B34D227B430B00D0B380 /* SummaryMocks.swift */; };
+		DE43B350227B585D00D0B380 /* WokExperienceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43B34F227B585D00D0B380 /* WokExperienceUITests.swift */; };
+		DE43B353227B6CEE00D0B380 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43B352227B6CEE00D0B380 /* EndPoint.swift */; };
+		DE43B35D227B867800D0B380 /* Button + downloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE43B35C227B867800D0B380 /* Button + downloadImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,12 +81,16 @@
 		DE1F09FD2278E0550074C73D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE1F09FF2278E0550074C73D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE1F0A042278E0560074C73D /* ResumeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResumeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE1F0A082278E0560074C73D /* ResumeAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeAppTests.swift; sourceTree = "<group>"; };
 		DE1F0A0A2278E0560074C73D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE1F0A0F2278E0560074C73D /* ResumeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResumeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE1F0A132278E0560074C73D /* ResumeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeAppUITests.swift; sourceTree = "<group>"; };
 		DE1F0A152278E0560074C73D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE1F0A222278E2B60074C73D /* GradientTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientTabBar.swift; sourceTree = "<group>"; };
+		DE43B347227B3EDA00D0B380 /* CActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CActivityIndicator.swift; sourceTree = "<group>"; };
+		DE43B34B227B424400D0B380 /* SummaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryTests.swift; sourceTree = "<group>"; };
+		DE43B34D227B430B00D0B380 /* SummaryMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryMocks.swift; sourceTree = "<group>"; };
+		DE43B34F227B585D00D0B380 /* WokExperienceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WokExperienceUITests.swift; sourceTree = "<group>"; };
+		DE43B352227B6CEE00D0B380 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		DE43B35C227B867800D0B380 /* Button + downloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Button + downloadImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +155,6 @@
 				A1C53B382279616B00991E71 /* WorkExperiencePresenter.swift */,
 				A1C53B3A2279621E00991E71 /* Work.swift */,
 				A1C53B3C2279692500991E71 /* WorkCell.swift */,
-				A1C53B402279739000991E71 /* ExperienceDetailController.swift */,
 			);
 			path = WorkExperience;
 			sourceTree = "<group>";
@@ -175,15 +182,16 @@
 		DE1F09EF2278E0540074C73D /* ResumeApp */ = {
 			isa = PBXGroup;
 			children = (
+				DE43B360227B95F600D0B380 /* Storyboard */,
+				DE43B351227B6CC000D0B380 /* Network */,
+				DE43B349227B3F7500D0B380 /* WorkExperienceDetail */,
 				A1289A19227AACD900FD6148 /* ContactInfo */,
 				A1289A10227A846500FD6148 /* Skills */,
 				A1C53B352279610700991E71 /* WorkExperience */,
 				A1C53B2C22793FA900991E71 /* Summary */,
 				DE1F0A212278E2A40074C73D /* Utils */,
 				DE1F09F02278E0540074C73D /* AppDelegate.swift */,
-				DE1F09F42278E0540074C73D /* Main.storyboard */,
 				DE1F09FA2278E0550074C73D /* Assets.xcassets */,
-				DE1F09FC2278E0550074C73D /* LaunchScreen.storyboard */,
 				DE1F09FF2278E0550074C73D /* Info.plist */,
 				DE1F09F72278E0540074C73D /* ResumeApp.xcdatamodeld */,
 			);
@@ -193,8 +201,9 @@
 		DE1F0A072278E0560074C73D /* ResumeAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				DE1F0A082278E0560074C73D /* ResumeAppTests.swift */,
 				DE1F0A0A2278E0560074C73D /* Info.plist */,
+				DE43B34B227B424400D0B380 /* SummaryTests.swift */,
+				DE43B34D227B430B00D0B380 /* SummaryMocks.swift */,
 			);
 			path = ResumeAppTests;
 			sourceTree = "<group>";
@@ -202,8 +211,8 @@
 		DE1F0A122278E0560074C73D /* ResumeAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				DE1F0A132278E0560074C73D /* ResumeAppUITests.swift */,
 				DE1F0A152278E0560074C73D /* Info.plist */,
+				DE43B34F227B585D00D0B380 /* WokExperienceUITests.swift */,
 			);
 			path = ResumeAppUITests;
 			sourceTree = "<group>";
@@ -212,11 +221,38 @@
 			isa = PBXGroup;
 			children = (
 				DE1F0A222278E2B60074C73D /* GradientTabBar.swift */,
-				A1C53B31227944E100991E71 /* ApiService.swift */,
 				A1C53B33227947B900991E71 /* Errors.swift */,
 				A1C53B4222797C4800991E71 /* RoundableButton.swift */,
+				DE43B347227B3EDA00D0B380 /* CActivityIndicator.swift */,
+				DE43B35C227B867800D0B380 /* Button + downloadImage.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		DE43B349227B3F7500D0B380 /* WorkExperienceDetail */ = {
+			isa = PBXGroup;
+			children = (
+				A1C53B402279739000991E71 /* ExperienceDetailController.swift */,
+			);
+			path = WorkExperienceDetail;
+			sourceTree = "<group>";
+		};
+		DE43B351227B6CC000D0B380 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A1C53B31227944E100991E71 /* ApiService.swift */,
+				DE43B352227B6CEE00D0B380 /* EndPoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DE43B360227B95F600D0B380 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DE1F09F42278E0540074C73D /* Main.storyboard */,
+				DE1F09FC2278E0550074C73D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,10 +326,12 @@
 					};
 					DE1F0A032278E0560074C73D = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = DE1F09EC2278E0540074C73D;
 					};
 					DE1F0A0E2278E0560074C73D = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = DE1F09EC2278E0540074C73D;
 					};
 				};
@@ -354,8 +392,10 @@
 				A1C53B2E227940AE00991E71 /* SummaryPresenter.swift in Sources */,
 				A1289A1D227AACF700FD6148 /* ContactInfoPresenter.swift in Sources */,
 				A1C53B3B2279621E00991E71 /* Work.swift in Sources */,
+				DE43B353227B6CEE00D0B380 /* EndPoint.swift in Sources */,
 				A1289A16227A84DA00FD6148 /* Skills.swift in Sources */,
 				DE1F0A232278E2B60074C73D /* GradientTabBar.swift in Sources */,
+				DE43B35D227B867800D0B380 /* Button + downloadImage.swift in Sources */,
 				A1C53B412279739000991E71 /* ExperienceDetailController.swift in Sources */,
 				A1C53B3D2279692500991E71 /* WorkCell.swift in Sources */,
 				A1C53B372279615D00991E71 /* WorkExperienceViewController.swift in Sources */,
@@ -369,6 +409,7 @@
 				A1289A1F227AAD0300FD6148 /* ContactInfo.swift in Sources */,
 				A1289A12227A848000FD6148 /* SkillsViewController.swift in Sources */,
 				DE1F09F12278E0540074C73D /* AppDelegate.swift in Sources */,
+				DE43B348227B3EDA00D0B380 /* CActivityIndicator.swift in Sources */,
 				A1289A1B227AACE900FD6148 /* ContactInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,7 +418,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE1F0A092278E0560074C73D /* ResumeAppTests.swift in Sources */,
+				DE43B34E227B430B00D0B380 /* SummaryMocks.swift in Sources */,
+				DE43B34C227B424400D0B380 /* SummaryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE1F0A142278E0560074C73D /* ResumeAppUITests.swift in Sources */,
+				DE43B350227B585D00D0B380 /* WokExperienceUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,7 +587,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQUE8QE5D8;
 				INFOPLIST_FILE = ResumeApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -562,7 +606,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQUE8QE5D8;
 				INFOPLIST_FILE = ResumeApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -579,7 +625,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQUE8QE5D8;
 				INFOPLIST_FILE = ResumeAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -588,6 +636,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = destinationTest.ResumeAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ResumeApp.app/ResumeApp";
@@ -599,7 +648,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQUE8QE5D8;
 				INFOPLIST_FILE = ResumeAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -618,7 +669,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQUE8QE5D8;
 				INFOPLIST_FILE = ResumeAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -627,6 +680,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = destinationTest.ResumeAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ResumeApp;
@@ -637,7 +691,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LQUE8QE5D8;
 				INFOPLIST_FILE = ResumeAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

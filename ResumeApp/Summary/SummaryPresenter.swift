@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol SummaryView: NSObjectProtocol {
+protocol SummaryView: class {
     func startLoading()
     func finishLoading()
     func setSummary(_ summary: Summary)
@@ -33,17 +33,18 @@ class SummaryPresenter {
     
     func getSummary(){
         self.summaryView?.startLoading()
-        ApiService.sharedInstance.fetchForUrlString(urlString: "https://raw.githubusercontent.com/JAIRMG/OriginTest/master/OriginTest/summary.json") {[weak self] (response: Result<Summary, Error>) in
+        ApiService.sharedInstance.fetchForUrlString(urlString: "\(EndPoint.BaseURL.rawValue)\(Service.summary.rawValue)") {[weak self] (response: Result<Summary, Error>) in
             
             self?.summaryView?.finishLoading()
             
+            guard let strongSelf = self else { return }
+            
             switch response {
             case .success(let summary):
-                print(summary)
-                self?.summaryView?.setSummary(summary)
+                strongSelf.summaryView?.setSummary(summary)
             case .failure(let error):
                 print(error)
-                self?.summaryView?.setEmptySummary()
+                strongSelf.summaryView?.setEmptySummary()
             }
         }
         

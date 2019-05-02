@@ -13,6 +13,9 @@ class WorkCell: UITableViewCell {
     @IBOutlet weak var roleLabel: UILabel!
     @IBOutlet weak var periodLabel: UILabel!
     @IBOutlet weak var companyLabel: UILabel!
+    @IBOutlet weak var companyImage: RoundableButton!
+    
+    
     
     
     var work: WorkInfo? {
@@ -20,6 +23,7 @@ class WorkCell: UITableViewCell {
             roleLabel.text = work?.role
             periodLabel.text = work?.date
             companyLabel.text = work?.company
+            companyImage.downloadFrom(link: work?.image, contentMode: .scaleAspectFit)
         }
     }
     
@@ -34,3 +38,4 @@ class WorkCell: UITableViewCell {
     
     
 }
+

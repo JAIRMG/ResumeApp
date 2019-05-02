@@ -8,10 +8,11 @@
 
 import Foundation
 
-protocol ContactInfoView: NSObjectProtocol {
+protocol ContactInfoView: class {
     func startLoading()
     func finishLoading()
     func setContactInfo(_ contactInfo: ContactInfo)
+    func setEmptyContactInfo()
 }
 
 class ContactInfoPresenter {
@@ -33,16 +34,17 @@ class ContactInfoPresenter {
     
     func getContactInfo(){
         self.contactInfoView?.startLoading()
-        ApiService.sharedInstance.fetchForUrlString(urlString: "https://raw.githubusercontent.com/JAIRMG/OriginTest/master/OriginTest/contactInfo.json") {[weak self] (response: Result<ContactInfo, Error>) in
+        ApiService.sharedInstance.fetchForUrlString(urlString: "\(EndPoint.BaseURL.rawValue)\(Service.contacInfo.rawValue)") {[weak self] (response: Result<ContactInfo, Error>) in
             
             self?.contactInfoView?.finishLoading()
+            guard let strongSelf = self else { return }
             
             switch response {
             case .success(let contactInfo):
-                print(contactInfo)
-                self?.contactInfoView?.setContactInfo(contactInfo)
+                strongSelf.contactInfoView?.setContactInfo(contactInfo)
             case .failure(let error):
                 print(error)
+                strongSelf.contactInfoView?.setEmptyContactInfo()
                 
             }
         }

@@ -17,7 +17,7 @@ class WorkExperienceViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //self.automaticallyAdjustsScrollViewInsets = false;
         workPresenter.attachView(self)
         workPresenter.getWork()
         
@@ -42,22 +42,29 @@ extension WorkExperienceViewController: UITableViewDelegate, UITableViewDataSour
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? ExperienceDetailController {
-            vc.workDetail = sender as! WorkInfo
+            vc.workDetail = sender as? WorkInfo
         }
     }
     
 }
 
 extension WorkExperienceViewController: WorkExperienceView {
+    func setEmptyWork() {
+        DispatchQueue.main.async {
+            self.workTable.isHidden = true
+        }
+    }
+    
     func startLoading() {
-        print("")
+        CActivityIndicator.show()
     }
     
     func finishLoading() {
-        print("")
+        CActivityIndicator.hide()
     }
     
     func setWork(_ work: [WorkInfo]) {
+        self.workTable.isHidden = false
         self.work = work
         self.workTable.reloadData()
     }

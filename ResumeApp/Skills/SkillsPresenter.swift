@@ -8,10 +8,11 @@
 
 import Foundation
 
-protocol SkillsView: NSObjectProtocol {
+protocol SkillsView: class {
     func startLoading()
     func finishLoading()
     func setSkills(_ skill: Skills)
+    func setEmptySkills()
 }
 
 class SkillsPresenter {
@@ -34,16 +35,18 @@ class SkillsPresenter {
     
     func getSkills(){
         self.skillsView?.startLoading()
-        ApiService.sharedInstance.fetchForUrlString(urlString: "https://raw.githubusercontent.com/JAIRMG/OriginTest/master/OriginTest/skills.json") {[weak self] (response: Result<Skills, Error>) in
+        ApiService.sharedInstance.fetchForUrlString(urlString: "\(EndPoint.BaseURL.rawValue)\(Service.skills.rawValue)") {[weak self] (response: Result<Skills, Error>) in
             
             self?.skillsView?.finishLoading()
             
+            guard let strongSelf = self else { return }
+            
             switch response {
             case .success(let skills):
-                print(skills)
-                self?.skillsView?.setSkills(skills)
+                strongSelf.skillsView?.setSkills(skills)
             case .failure(let error):
                 print(error)
+                strongSelf.skillsView?.setEmptySkills()
                 
             }
         }

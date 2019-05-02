@@ -30,11 +30,11 @@ class SummaryViewController: UIViewController {
 
 extension SummaryViewController: SummaryView {
     func startLoading() {
-        print("loading")
+        CActivityIndicator.show()
     }
     
     func finishLoading() {
-        print("finish loading")
+        CActivityIndicator.hide()
     }
     
     func setSummary(_ summary: Summary) {
@@ -46,8 +46,11 @@ extension SummaryViewController: SummaryView {
     }
     
     func setEmptySummary(){
-        summaryDescription.isHidden = true
-        interestDescription.isHidden = true
+        DispatchQueue.main.async {
+            self.summaryDescription.isHidden = true
+            self.interestDescription.isHidden = true
+        }
+        
     }
     
     

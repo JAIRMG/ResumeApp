@@ -9,10 +9,11 @@
 import Foundation
 import UIKit
 
-protocol WorkExperienceView: NSObjectProtocol {
+protocol WorkExperienceView: class {
     func startLoading()
     func finishLoading()
     func setWork(_ work: [WorkInfo])
+    func setEmptyWork()
 }
 
 class WorkExperiencePresenter {
@@ -33,16 +34,17 @@ class WorkExperiencePresenter {
     
     func getWork(){
         self.workView?.startLoading()
-        ApiService.sharedInstance.fetchForUrlString(urlString: "https://raw.githubusercontent.com/JAIRMG/OriginTest/master/OriginTest/work.json") {[weak self] (response: Result<Work, Error>) in
+        ApiService.sharedInstance.fetchForUrlString(urlString: "\(EndPoint.BaseURL.rawValue)\(Service.work.rawValue)") {[weak self] (response: Result<Work, Error>) in
             
             self?.workView?.finishLoading()
+            guard let strongSelf = self else { return }
             
             switch response {
             case .success(let work):
-                print(work)
-                self?.workView?.setWork(work.workInfo ?? [])
+                strongSelf.workView?.setWork(work.workInfo ?? [])
             case .failure(let error):
                 print(error)
+                strongSelf.workView?.setEmptyWork()
                 
             }
         }

@@ -16,6 +16,7 @@ class ContactInfoViewController: UIViewController {
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var phone: UILabel!
     @IBOutlet weak var email: UILabel!
+    @IBOutlet weak var contactInfoStack: UIStackView!
     
     
     fileprivate let contactInfoPresenter = ContactInfoPresenter(contactInfo: ContactInfo())
@@ -31,17 +32,23 @@ class ContactInfoViewController: UIViewController {
 }
 
 extension ContactInfoViewController: ContactInfoView {
+    func setEmptyContactInfo() {
+        DispatchQueue.main.async {
+            self.contactInfoStack.isHidden = true
+        }
+    }
+    
     func startLoading() {
-        print("start loading")
+        CActivityIndicator.show()
     }
     
     func finishLoading() {
-        print("finish loading")
+        CActivityIndicator.hide()
     }
     
     func setContactInfo(_ contactInfo: ContactInfo) {
         self.contactInfo = contactInfo
-        
+        self.contactInfoStack.isHidden = false
         nameLabel.text = self.contactInfo.fullName
         place.text = self.contactInfo.placeOfBirth
         date.text = self.contactInfo.dateOfBirth

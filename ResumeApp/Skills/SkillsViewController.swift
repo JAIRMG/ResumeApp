@@ -10,6 +10,8 @@ import UIKit
 
 class SkillsViewController: UIViewController {
     
+    @IBOutlet weak var advancedStack: UIStackView!
+    @IBOutlet weak var basicStack: UIStackView!
     
     @IBOutlet weak var advancedS: UILabel!
     @IBOutlet weak var advancedA: UILabel!
@@ -35,16 +37,25 @@ class SkillsViewController: UIViewController {
 }
 
 extension SkillsViewController: SkillsView {
+    func setEmptySkills() {
+        DispatchQueue.main.async {
+            self.advancedStack.isHidden = true
+            self.basicStack.isHidden = true
+        }
+    }
+    
     func startLoading() {
-        print("Loading")
+        CActivityIndicator.show()
     }
     
     func finishLoading() {
-        print("Finishing")
+        CActivityIndicator.hide()
     }
     
     func setSkills(_ skill: Skills) {
         self.skills = skill
+        self.advancedStack.isHidden = false
+        self.basicStack.isHidden = false
         advancedS.text = self.skills.advancedKnowledge?.advanced?[0]
         advancedA.text = self.skills.advancedKnowledge?.advanced?[1]
         b1.text = self.skills.basicKnowledge?.basic?[0]
