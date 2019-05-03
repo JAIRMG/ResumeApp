@@ -22,6 +22,8 @@ class ApiService {
         
         var urlRequest = URLRequest(url: url)
         let config = URLSessionConfiguration.default
+        config.timeoutIntervalForResource = 300
+        config.waitsForConnectivity = true
         let session = URLSession(configuration: config)
         urlRequest.httpMethod = "GET"
         

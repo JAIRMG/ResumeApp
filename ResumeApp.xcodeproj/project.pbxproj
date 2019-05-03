@@ -182,6 +182,7 @@
 		DE1F09EF2278E0540074C73D /* ResumeApp */ = {
 			isa = PBXGroup;
 			children = (
+				DED4501B227CC24A004D1E50 /* Assets */,
 				DE43B360227B95F600D0B380 /* Storyboard */,
 				DE43B351227B6CC000D0B380 /* Network */,
 				DE43B349227B3F7500D0B380 /* WorkExperienceDetail */,
@@ -191,7 +192,6 @@
 				A1C53B2C22793FA900991E71 /* Summary */,
 				DE1F0A212278E2A40074C73D /* Utils */,
 				DE1F09F02278E0540074C73D /* AppDelegate.swift */,
-				DE1F09FA2278E0550074C73D /* Assets.xcassets */,
 				DE1F09FF2278E0550074C73D /* Info.plist */,
 				DE1F09F72278E0540074C73D /* ResumeApp.xcdatamodeld */,
 			);
@@ -253,6 +253,14 @@
 				DE1F09FC2278E0550074C73D /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DED4501B227CC24A004D1E50 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DE1F09FA2278E0550074C73D /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
